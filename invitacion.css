@@ -1,0 +1,330 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-size: 62.5%; */
+}
+
+html {
+  /* font-family: 'Cinzel', serif; */
+  /* font-family: 'Great Vibes', cursive;
+	font-display: fallback; */
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.titulares {
+  /* background-color: #2227; */
+  background: rgb(219,204,226);
+background: linear-gradient(90deg, rgba(219,204,226,1) 0%, rgba(233,159,223,1) 35%, rgba(0,183,221,1) 100%);
+  color: #eee;
+  padding: 0.5rem;
+  min-height: 5vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background: url(../img/blanco-acuarela.jpg) no-repeat center center/cover; */
+}
+
+/* % inicio de navegación */
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #eee;
+  font-size: 3.5vh;
+  font-family: "Great Vibes", cursive;
+  /* font-display: fallback; */
+  z-index: 9999;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 1.5rem;
+  justify-content: space-evenly;
+}
+
+.menu-nav li a {
+  color: #fff;
+}
+
+/* .menu-nav li a:hover {
+	text-decoration: underline;
+	text-shadow: 0 0 13px goldenrod;
+	cursor: pointer;
+	
+} */
+
+.menu-nav li a.item-niña:hover {
+  /* text-decoration: underline; */
+  text-shadow: 0 0 13px pink;
+  cursor: pointer;
+  color: pink;
+	font-size: 4.0vh;
+}
+
+.menu-nav li a.item-niño:hover {
+  /* text-decoration: underline; */
+  text-shadow: 0 0 13px pink;
+  cursor: pointer;
+  color: cyan;
+	font-size: 4.0vh;
+
+}
+
+.menu-nav li a.item-tarjeta:hover {
+  /* text-decoration: underline; */
+  text-shadow: 0 0 13px pink;
+  cursor: pointer;
+  color: lightslategray;
+	font-size: 4.0vh;
+
+}
+
+.logo-nav {
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  /* filter: invert(1); */
+  /* -webkit-filter: invert(1); */
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border: thick solid #2232;
+}
+
+/* .logo-nav:hover {
+	box-shadow: 0 0px 6px #eee;
+	filter: invert(0);
+	-webkit-filter: drop-shadow(16px 16px 20px red) invert(75%);
+	filter: drop-shadow(2px 2px 5px red) invert(75%);
+	cursor: pointer;
+} */
+
+.nav-icon:hover {
+  /* text-decoration: underline; */
+  text-shadow: 0 0 5px goldenrod;
+  cursor: pointer;
+}
+
+footer {
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* footer:hover {
+  filter: invert(1);
+  -webkit-filter: invert(1);
+  cursor: pointer;
+} */
+
+/* % fin de navegación */
+
+/* contenedor  */
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-image {
+  min-height: 100vh;
+  background-image: url(../images/BGR_2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 0vh;
+  box-shadow: 0 0 1vh #eee;
+}
+
+.hero-image div {
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2223;
+}
+
+.hero-image div h1 {
+  color: #eee;
+  font-size: 15vh;
+  text-shadow: 1px 0px 3px #eee;
+  font-family: "Great Vibes", cursive;
+  text-shadow: 0 0 300px #fff;
+}
+
+.hero-image div h1:hover {
+  text-shadow: 0 0 600px blueviolet;
+  cursor: pointer;
+}
+
+.hero-image div h1.title-gender:hover {
+  text-shadow: 0 0 600px blueviolet;
+  cursor: pointer;
+  color: pink;
+}
+
+.hero-image div h1.title-revelation:hover {
+  text-shadow: 0 0 600px blueviolet;
+  cursor: pointer;
+  color: cyan;
+}
+
+
+
+/* contenedor carta con dos columnas, simbologia y descripción */
+
+.contenido {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-content {
+  min-width: 100%;
+  min-height: 70vh;
+  background-color: black;
+  background-image: url(../images/foot-baby.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: fixed;
+  box-shadow: 0 0 30px #2223;
+  position: relative;
+  margin-bottom: 0vh;
+  order: 2;
+}
+
+.card-content img {
+  margin: 0 auto;
+  width: 15rem;
+  height: 33rem;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 0 10px black;
+  border-radius: 5vh;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
+  display: block;
+  position: absolute;
+  top: 7%;
+  left: 40%;
+  opacity: 0.5;
+  /* filter: invert(1);
+  -webkit-filter: invert(1); */
+}
+
+.card-content img:hover {
+  filter: invert(0);
+  -webkit-filter: invert(0);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.contenido .p-inicial {
+  text-indent: 2rem;
+	top: 0;
+  margin-top: 10vh;
+  
+}
+
+.contenido p {
+  width: 77%;
+  font-size: 3vh;
+  font-style: italic;
+  line-height: 2rem;
+  /* letter-spacing: 0.1rem; */
+  text-shadow: 0 0 3px #2226;
+  margin-bottom: 4vh;
+  text-align: justify;
+  /* font-weight: 100; */
+  
+}
+
+.contenido p span {
+  font-size: 11vh;
+  font-family: "Great Vibes", cursive;
+  font-weight: 900;
+}
+
+.contenido h3 {
+  width: 80%;
+  font-size: 2.3vh;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0 3px #2226;
+  /* text-indent: 4rem; */
+  margin: 1vh;
+}
+
+/* *cards extras */
+
+.cards-extras {
+  width: 80%;
+  margin: 5vh auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.item {
+  color: #111;
+  font-style: italic;
+}
+
+.cards-extras .item a {
+  color: black;
+}
+
+
+/*  % footer titulares nombres pam y ray */
+
+
+@media (max-width:483px) {
+    .card-content img {
+      left:30%;
+    }
+}
+
+@media (max-width:450px) {
+  .card-content img {
+    left:20%;
+  }
+}
+
+
+/* background: rgb(197,152,218);
+background: linear-gradient(257deg, rgba(197,152,218,1) 0%, rgba(246,133,231,1) 35%, rgba(0,183,221,1) 100%); */
