@@ -11,6 +11,7 @@ html {
   /* font-family: 'Cinzel', serif; */
   /* font-family: 'Great Vibes', cursive;
 	font-display: fallback; */
+  overflow-x: hidden;
 }
 
 ol,
@@ -38,6 +39,13 @@ body {
   min-height: 100vh;
   /* background: url(../img/blanco-acuarela.jpg) no-repeat center center/cover; */
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
 
 /* % inicio de navegación */
 
@@ -210,18 +218,23 @@ main {
 }
 
 .card-content {
-  min-width: 100%;
-  min-height: 70vh;
+  border-radius: 3px;
+  min-width: 50%;
+  min-height: 50vh;
   background-color: black;
-  background-image: url(../images/flores-bebe.jpeg);
+  background-image: url(./images/portaretrato-valentina.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-position: fixed;
   box-shadow: 0 0 30px #2223;
   position: relative;
   margin-bottom: 0vh;
   order: 2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 
 .card-content img {
@@ -252,12 +265,15 @@ main {
   cursor: pointer;
 }
 
+
+
 .contenido .p-inicial {
   text-indent: 2rem;
 	top: 0;
   margin-top: 10vh;
   
 }
+
 
 .contenido p {
   width: 77%;
